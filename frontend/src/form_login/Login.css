@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container_login header{
+    height: 100px;
+    background-color: black;
+}
+
+header .dragao_logo{
+    width: 280px;
+}
+
+.div_login{
+    display: flex;
+    justify-content: center;
+    background-image: url(../imgs/img_header/fundo_dragao.jpg);
+    height: 853px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.div_login .login{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-top: 100px;
+}
+
+.login h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+}
+
+.login input{
+    height: 60px;
+    border: 0;
+    border-radius: 20px;
+    background: linear-gradient(to right, #000000 48%, #fece2fcf 100%);
+    outline: none;
+    color: #FFFFFF;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 12px 24px, rgba(0, 0, 0, 0.3) 0px 8px 8px;
+}
+
+.login input::placeholder{
+    font-size: 25px;
+    color: #FFFFFF ;
+    padding-left: 20px;
+    
+}
+
+.login .email{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.login .senha{
+    width: 100%;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+/* ajustar o local da img */
+.div_senha .hidden{
+    position: absolute;
+    left: 1150px;
+    transform: translateY(50%);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 0;
+    color: rgb(0, 0, 0);
+    background: transparent;
+}
+
+/* link Esqueceu a senha */
+
+.login .lost_pass{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.login .lost_pass:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.login .button_login{
+    height: 70px;
+    border: 0;
+    border-radius: 20px;
+    background: linear-gradient(to right, #000000 48%, #fece2fcf 100%);
+    outline: none;
+    color: white;
+    font-size: 40px;
+    font-weight: bold
+}
+
+.login .button_login:hover{
+    cursor: pointer;
+    font-size: 45px;
+    transition: all 0.30s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 12px 24px, rgba(0, 0, 0, 0.3) 0px 8px 8px;
+}
+
+.login hr{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.login p{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.login p a{
+    text-decoration: none;
+    margin-left: 7px;
+    color: #FECE2F;
+}
+
+.login p a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
